@@ -4,32 +4,11 @@ import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Aayareeb - Governance Excellence & Strategic Advisory | Horn of Africa",
-  description:
-    "Leading governance and research consultancy firm in Somalia. Expert advisory services in institutional strengthening, policy research, strategic planning, and capacity building across the Horn of Africa. Established 2020.",
-  keywords: [
-    "governance consulting",
-    "institutional development",
-    "policy research",
-    "strategic advisory",
-    "Horn of Africa",
-    "Somalia consultancy",
-    "capacity building",
-    "public administration",
-    "development consulting",
-  ],
-  authors: [{ name: "Aayareeb Consulting" }],
-  openGraph: {
-    title: "Aayareeb - Governance Excellence & Strategic Advisory",
-    description:
-      "Expert governance consulting and research services for institutional transformation in fragile and emerging contexts across the Horn of Africa.",
-    type: "website",
-    locale: "en_US",
-    siteName: "Aayareeb",
-  },
+  title: "Aayareeb | Strategic Consulting Excellence",
+  description: "Empowering governments and enterprises with innovative solutions and strategic consulting services",
   generator: "v0.app",
   icons: {
     icon: [
@@ -57,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.className} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
